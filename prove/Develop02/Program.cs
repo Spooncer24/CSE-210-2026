@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop02 World!");
+        //Create menu instance and run it
+        Menu menu = new Menu();
+        menu.RunMenu();
     }
 }
