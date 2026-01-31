@@ -12,8 +12,6 @@ public class Menu
     //List for saving entrys into
     List<string> entryList = new List<string>();
 
-    bool Loop = true;
-
     public void RunMenu()
     {
         string UserChoice = "0";
