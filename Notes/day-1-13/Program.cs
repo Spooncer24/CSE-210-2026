@@ -41,5 +41,9 @@ class Program
             Console.Write ("Change your name Larry. ");
             name = Console.ReadLine ();
         }
+
+        // to make a new project you first need to get in the directory you want to make a file using 'cd Notes' in console
+        // Then you need to do "dotnet new console -0 'name of program'This should make the programn
+        // then you go into it using the 'cd' then "dotnet build"
     }
 }
