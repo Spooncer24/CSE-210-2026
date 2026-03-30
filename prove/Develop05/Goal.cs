@@ -19,8 +19,4 @@ abstract class Goal
 
     abstract public int SetComplete();
     abstract public List<dynamic> GetGoal();
-    public virtual void CompletionEvent()
-    {
-        
-    }
 }
