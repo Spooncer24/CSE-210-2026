@@ -5,10 +5,9 @@ class Game
     public void Menu()
     {
         //super duper epic credit scene and menu
-        string credits ="\n\n                                      A Spencer Hewitt Game";
+        string credits ="\n\n\n\n\n\n                                      A Spencer Hewitt Game";
 
-        string menu = @"
-        +----------------------------------------------------------------------------------------+
+        string menu = @"        +----------------------------------------------------------------------------------------+
         | ___________      .__                                                                   |
         | \_   _____/_____ |__| ____                                                             |
         |  |    __)_\____ \|  |/ ___\                                                            |
@@ -38,6 +37,21 @@ class Game
         Console.WriteLine(menu);
         Console.WriteLine(options);
         string choice = Console.ReadLine();
+
+
+        if(choice == "0")
+        {
+            return;
+        }
+        else
+        {
+            
+        }
+
+        Inventory inventory = new Inventory();
+        inventory.DisplayInventory();
+        inventory.AddItem("Health Potion", 3);
+        inventory.DisplayInventory();
     }
 }
 

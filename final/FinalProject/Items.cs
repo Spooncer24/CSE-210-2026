@@ -6,7 +6,7 @@ class Items
     private string _name;
     private string _description;
     private int _type; //types include 0; weapon, 1; potion.
-    private int _amount; //If weapon then this is damage 
+    private int _amount; //If weapon, then this is damage 
 
     public Items(string name, string description, int type, int amount)
     {
@@ -27,13 +27,24 @@ class Items
     {
         if (_type == 0)
         {
+            //Dont bother displaying weapon if value is 0 they dont have it yet
+            if (_amount == 0)
+            {return;}
+
+            Console.WriteLine();
             Console.WriteLine($"{_name}, DMG: {_amount}");
             Console.WriteLine($"Desc: {_description}");
         }
         else
         {
+            Console.WriteLine();
             Console.WriteLine($"{_name}, amt: {_amount}");
             Console.WriteLine($"Desc: {_description}");
         }
+    }
+
+    public string GetName()
+    {
+        return _name;
     }
 }
