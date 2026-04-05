@@ -45,13 +45,13 @@ class Game
         }
         else
         {
-            
-        }
+            Console.Write("Name of Hero: ");
+            string name = Console.ReadLine();
 
-        Inventory inventory = new Inventory();
-        inventory.DisplayInventory();
-        inventory.AddItem("Health Potion", 3);
-        inventory.DisplayInventory();
+            Player player = new Player(name, 100, 100);
+            BattleLogic battle = new BattleLogic(player);
+            battle.StartBattle();
+        }
     }
 }
 

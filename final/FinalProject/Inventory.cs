@@ -33,4 +33,18 @@ class Inventory
         }
         //Console.WriteLine("Item not found");
     }
+
+    public bool UseItem(string name)
+{
+    foreach (Items item in myInventory)
+        {
+            if (item.GetName() == name && item.GetAmount() > 0)
+            {
+                item.AddToItem(-1); // remove one
+                return true;
+            }
+        }   
+
+        return false;
+    }
 }

@@ -47,4 +47,9 @@ class Items
     {
         return _name;
     }
+
+    public int GetAmount()
+    {
+        return _amount;
+    }
 }
